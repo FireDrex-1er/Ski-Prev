@@ -1,0 +1,135 @@
+body{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    margin: 0%;padding: 0%;
+    background-color: #ddd;
+}
+
+body #head{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: #222;
+    z-index: 999;
+}#head #menu{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 85%;
+}#head #menu #Exercice{
+    position: absolute;
+    left: 0%;
+    top: 50%;
+    transform: translate(0%,-50%);
+    padding: 3% 10% 3% 10%;
+    text-align: center;
+    align-content: center;
+
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: 900;
+}#Exercice #Sous_menu{
+    position: absolute;
+    top: 122%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+    background-color: #363636;
+    padding: 10%;
+    margin: 0%;
+    z-index: 2;
+}#Exercice #Sous_menu span{
+    font-family: serif;
+    width: 100%;
+    font-weight: 700;
+    color: #bbb;
+
+    padding: 11.5px;
+    margin: 0%;
+
+box-shadow: 0px 0px 30px #ffffff05;
+}#head #menu #Entrainement{
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    transform: translate(-100%,-50%);
+    padding: 3% 10% 3% 10%;
+    text-align: center;
+    align-content: center;
+
+    color: #ddd;
+    font-family: sans-serif;
+    font-weight: 900;
+}#Entrainement #Sous_menu{
+    position: absolute;
+    top: 122%;
+    left: 50%;
+    transform: translate(-50%,-200%);
+    background-color: #363636;
+    padding: 10%;
+    margin: 0%;
+    z-index: 2;
+}#Entrainement #Sous_menu span{
+    font-family: serif;
+    width: 100%;
+    font-weight: 700;
+    color: #bbb;
+
+    padding: 11.5px;
+    margin: 0%;
+
+box-shadow: 0px 0px 30px #ffffff05;
+}
+*{
+    font-size: 18px;
+    user-select: none;
+}
+
+
+#contenue{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    width: 100%;
+}#contenue div{
+    transform: translate(0%,-200%);
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}#contenue * img{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    background-color: #bbb;
+}#contenue * span{
+    display: block;
+    width: 80%;
+    height: 0%;
+    transform: translate(12%,0%);
+    text-align: center;
+    font-family: serif;
+    font-weight: 900;
+    background-color: #cfcfcf;
+    color: #a00;
+    padding:5% 0% 5% 0%;
+    box-shadow: 0px 0px 30px #00000044;
+    border: 1px solid #bbb;
+}#contenue * video{
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+}#contenue * .text{
+    color: #111;
+    text-align: left;
+    padding: 2%;
+    transform: translate(9.5%,0%);
+}
