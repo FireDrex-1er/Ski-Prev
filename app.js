@@ -905,3 +905,25 @@ document.body.children["head"].children["suivant"].addEventListener("click",()=>
     }
 
 });
+
+
+window.addEventListener("load",()=>{
+    if (document.body.clientWidth <= 430) {
+        
+        document.body.children["head"].children["suivant"].style.top="100%";
+        document.body.children["head"].children["suivant"].style.transform="translate(-100%,-100%)";
+        document.body.children["head"].children["suivant"].style.left="100%";
+        document.body.children["head"].children["suivant"].style.boxShadow="0px 0px 30px #f002";
+        
+        const sheets = document.styleSheets;
+        for (let sheet of sheets) {
+            for (let i = 0; i < sheet.cssRules.length; i++) {
+                const rule = sheet.cssRules[i];
+                if (rule.selectorText === "#head #suivant:hover") {
+                    sheet.deleteRule(i);
+                }
+            }
+        }
+    }
+
+});

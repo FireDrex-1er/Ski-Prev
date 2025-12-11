@@ -74,6 +74,7 @@ body #body{
     font-weight: 700;
     color: #222;
     text-decoration: none;
+    width: max-content;
 }body #body input{
     position: absolute;
     left: 50%;
@@ -82,4 +83,5 @@ body #body{
     border: 1px solid #222;
     border-radius: 5px;
     text-align: center;
+    width: max-content;
 }
